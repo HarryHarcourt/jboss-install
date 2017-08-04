@@ -1,0 +1,39 @@
+###
+## This is the variable file for the essential_project application
+#
+
+yum_release: 20160331
+
+# Here is the JBoss source and version
+software_repo_ip: ip-172-31-29-67.us-west-2.compute.internal/software-repo
+
+jboss_version: 6.4.0
+jboss_version_unzip: 6.4
+
+# Here are variables related to the JBoss installation
+
+jboss_runtime_user: jboss
+jboss_startup_wait: 30
+jboss_shutdown_wait: 30
+jboss_console_log: /var/log/jboss-as/console.log
+
+jboss_jvm_min_memory: 512M
+jboss_jvm_max_memory: 512M
+
+http_port: 8080
+https_port: 8443
+
+# This will configure a default manager-gui user:
+
+admin_username: admin
+admin_password: adminsecret
+
+# Source files for deployment
+#warURL: "http://{{ software_repo_ip }}/essential_project"
+#warName: essential_viewer.war
+#warLocalPath: /usr/share/tomcat/webapps
+#appPath: essential_viewer
+
+#
+#webTest: enterprise-architecture
+

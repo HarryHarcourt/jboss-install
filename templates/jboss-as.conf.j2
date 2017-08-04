@@ -1,0 +1,22 @@
+# General configuration for the init.d scripts,
+# not necessarily for JBoss AS itself.
+
+# The username who should own the process.
+#
+# JBOSS_USER=jboss-as
+JBOSS_USER={{ jboss_runtime_user }}
+
+# The amount of time to wait for startup
+#
+# STARTUP_WAIT=30
+STARTUP_WAIT={{ jboss_startup_wait }}
+
+# The amount of time to wait for shutdown
+#
+# SHUTDOWN_WAIT=30
+SHUTDOWN_WAIT={{ jboss_shutdown_wait }}
+
+# Location to keep the console log
+#
+# JBOSS_CONSOLE_LOG=/var/log/jboss-as/console.log
+JBOSS_CONSOLE_LOG={{ jboss_console_log }}
